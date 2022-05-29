@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+#app ul {
+  list-style: none;
+}
+
+#app li span.done {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=main.css.map */
