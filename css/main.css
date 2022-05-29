@@ -5,4 +5,8 @@
 #app li span.done {
   text-decoration: line-through;
 }
+
+[v-cloak] {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */

@@ -15,16 +15,16 @@
             <input type="text" v-model="newItem" required>
             <button v-on:click="addItem">add</button>
         </form>
-        <p>{{alertMessage}}</p>
+        <p v-cloak>{{alertMessage}}</p>
         <ul>
             <li v-for="(todo, index) in todos">
                 <input type="checkbox" v-model="todo.isDone">
-                <span v-bind:class="{done:todo.isDone}">{{todo.item}}</span>
+                <span v-cloak v-bind:class="{done:todo.isDone}">{{todo.item}}</span>
                 <button v-on:click="deleteItem(index)">delete</button>
             </li>
         </ul>
 
-        <pre>{{$data}}</pre>
+        <pre v-cloak>{{$data}}</pre>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="js/main.js"></script>
